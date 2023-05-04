@@ -1,0 +1,126 @@
+# Testes de Software
+- processo de execução de um produto para determinar se ele atingiu suas especificações e funcionou corretamente no ambiente para o qual foi projetado.
+
+## Modelo Cascata (mais rígido, não retornar às etapas anteriores)
+- especificação
+- projeto de software
+- implementação
+- testes
+- implantação
+
+## Desenvolvimento Ágil
+- processo iterativo
+
+## Defeito, Erro e Falha
+### Falha
+- cenário inesperado que o usuário acaba tendo contato
+- a falha tem por trás um erro
+
+### Erro
+- falha humana
+- evidencia o defeito
+
+### Defeito
+- bug
+- erro técnico
+- causa raiz
+
+## Verificação e Validação
+### Verificação: estamos contruindo certo o sistema? Conforme as especificações e atendendo os requisitos?
+### Validação: estamos construindo o software certo? expectativas do usuários estão sendo atendidas?
+
+## Níveis de Teste
+- unidade
+- integração
+- sistema
+- regressão
+- aceitação
+
+### Teste unitário
+- direcionados às pequenas unidades do software
+- ferramentas: JUnit, Jest, PHPUnit...
+
+### Teste de integração
+- mais alto nível que o teste unitário
+
+### Teste de sistema
+- deploy de uma versão estável do sistema
+
+### Teste de regressão
+- reavaliar tudo o que está sendo desenvolvido
+- reavalia as etapas anteriores
+- ferramenta: Selenium
+- verifica se o que é novo não está "quebrando" o que já existe
+
+### Teste Alpha
+- pessoas estratégicas fazer validação
+- teste inicial
+
+### Teste Beta
+- gama maior de usuários
+
+### Teste Cannary
+- estratégia de deploy
+- só alguns usuários usam a versão, antes de ampliarmos para todos os usuários
+
+### Teste de aceitação
+- TDD
+
+## Técnicas de Teste
+### Técnica Caixa Branca
+- teste estrutural
+- conhecer o código-fonte
+- validar dados, controles, fluxos, chamadas...
+- garantir a qualidade da implementação
+- níveis: unidade, integração e regressão
+
+### Técnica Caixa Preta
+- teste funcional
+- verificar saídas usando vários tipos de entrada
+- teste sem conhecer a estrutura interna do software
+- níveis: integração, sistema e aceitação
+
+### Técnica Caixa Cinza
+- mescla técnica de Caixa Branca e Caixa Preta
+- analisa a parte lógica e também a funcionalidade
+- muito utilizado para Engenharia Reversa
+
+## Testes Não Funcionais
+- ligados a requisitos não funcionais
+- requisitos não funcionais não são, necessariamente, relacionados com as regras de negócio do sistema
+
+### Teste de Carga
+- verificar qual o volume de transações, acessos simultâneos ou usuários que um servidor/software/sistema suporte
+- simulação de acessos simultâneos, por exemplo
+- teste de comportamento do sistema
+- ferramentas: gatling, Apache
+
+### Teste de Stress
+- submeter o software a situações extremas
+- testar os limites do software e avaliar seu comportamento
+- avalia até quanto o software pode ser exigido e quais as falhas ( se existirem) decorrentes do teste
+- fazer o sistema quebrar (crash)
+
+### Teste de Segurança
+- processo crítico de segurança cibernética que visa detectar vulnerabilidades em sistemas, software, redes e aplicativo
+
+## Pirâmide de Testes
+- vários níveis e formas de testar o software
+- base da pirâmide: teste de unidade
+- meio da pirâmide: teste de serviço, de integração
+- topo da pirâmide: teste UI, teste de sistema
+- devemos sempre começar pelo teste de unidade
+- a velocidade é maior na base da pirâmida e menor no topo
+- na camada mais alta, há mais integração; e na mais baixa, mais isolamento
+
+### Antipatern
+- software testing ice cream cone
+- inversa à pirâmide de testes, quanto às etapas
+
+
+
+
+
+
+
+
